@@ -10,7 +10,7 @@ In your `head` tag, include the following code:
 <script type="text/javascript" src="build/domglitch.js"></script>
 ```
 
-## Installing from npm
+## Usage
 
 ```bash
 $ npm i dom-glitch
@@ -24,13 +24,6 @@ glitch.glitch({
   $dom, // (DOM element to use as a wrapper),
   src // (IMG path to use as wrapper)
 })
-```
-
-## Directory Contents
-
-```
-├── build - Compiled source code.
-└── src - Source files.
 ```
 
 ## Thanks
