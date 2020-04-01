@@ -43,6 +43,7 @@ The following libraries / open-source projects were used in the development of d
 
 ## Next steps
 
+- [ ] Cleanup and work on weights
+- [ ] Test & Debug
 - [ ] Examples
 - [ ] Better Documentation
-- [ ] Test & Debug
