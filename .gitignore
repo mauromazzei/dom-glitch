@@ -1,0 +1,7 @@
+.DS_STORE
+.ciffi/
+.idea/
+.cache/
+node_modules/
+coverage/
+src/config/config.js

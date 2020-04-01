@@ -1,0 +1,43 @@
+const CiffiSettings = {
+    dev: {
+      env: 'dev',
+      startUrl: 'http://localhost:3000/',
+      wantNotify: true
+    },
+    build: {
+      absoluteBuildPath: '/build/',
+      env: 'local',
+      path: './build',
+      srcPathName: 'src'
+    },
+    general: {
+      autoprefixer: 'last 12 versions',
+      bundle: 'webpack',
+      designToken: false,
+      designTokenInputFile: 'src/config/design-token.json',
+      designTokenOutputFile: 'src/styles/config/_design-token.scss',
+      features: ['livereload'],
+      offline: false,
+      projectName: 'dom-glitch',
+      scriptsOutputName: 'main.js',
+      staticFiles: [],
+      staticFolders: ['images'],
+      stylesOutputName: 'main.css',
+      useNodeSass: false
+    },
+    localServer: {
+      absoluteBuildPath: '/static/',
+      config: 'config.server.js',
+      port: '3000',
+      publicPath: '../public',
+      useHMR: false
+    },
+    custom: {
+      progressBar: {
+        fillChar: ' ',
+        bgChar: ' '
+      }
+    }
+};
+
+module.exports = CiffiSettings;

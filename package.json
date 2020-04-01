@@ -1,0 +1,54 @@
+{
+  "name": "dom-glitch",
+  "version": "0.0.1",
+  "description": "Glitch effect for dom images",
+  "main": "build/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauromazzei/dom-glitch.git"
+  },
+  "keywords": [
+    "glitch",
+    "p5",
+    "js"
+  ],
+  "author": "Mauro Mazzei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mauromazzei/dom-glitch/issues"
+  },
+  "homepage": "https://github.com/mauromazzei/dom-glitch#readme",
+  "devDependencies": {
+    "@ciffi-js/builder": "5.2.0",
+    "@ciffi-js/jsonize-path": "1.2.0",
+    "husky": "3.1.0",
+    "prettier": "1.19.1",
+    "pretty-quick": "2.0.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "7.7.0",
+    "p5": "^1.0.0"
+  },
+  "scripts": {
+    "start": "ciffi-builder start --env",
+    "dev": "ciffi-builder dev --env",
+    "build": "NODE_ENV=production ciffi-builder build --env",
+    "serve": "NODE_ENV=production ciffi-builder serve --env",
+    "jsonize": "ciffi-jsonize",
+    "config": "ciffi-builder config --env",
+    "assets": "ciffi-builder assets",
+    "newcomponent": "./bin/new-component.sh $1 $2",
+    "prettier": "prettier --write --single-quote '**/*.{jsx,js,json,scss}'",
+    "test-dev": "ciffi-builder test --watchAll",
+    "test": "ciffi-builder test",
+    "coverage": "ciffi-builder test --coverage"
+  },
+  "browserslist": [
+    "last 4 versions"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
